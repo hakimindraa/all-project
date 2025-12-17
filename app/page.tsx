@@ -27,7 +27,7 @@ export default function BioPage() {
     },
     {
       title: "GitHub",
-      href: "https://github.com/hakimlesmna",
+      href: "https://github.com/dashboard",
       icon: Github,
     },
     {
