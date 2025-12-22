@@ -27,7 +27,7 @@ export default function BioPage() {
     },
     {
       title: "GitHub",
-      href: "https://github.com/dashboard",
+      href: "https://github.com/hakimindraa",
       icon: Github,
     },
     {
@@ -39,9 +39,8 @@ export default function BioPage() {
 
   return (
     <main
-      className={`${
-        dark ? "bg-black text-white" : "bg-white text-black"
-      } min-h-screen flex items-center justify-center px-4 transition-colors`}
+      className={`${dark ? "bg-black text-white" : "bg-white text-black"
+        } min-h-screen flex items-center justify-center px-4 transition-colors`}
     >
       {/* Theme Toggle */}
       <button
@@ -55,11 +54,10 @@ export default function BioPage() {
       {/* Card */}
       <div
         className={`w-full max-w-sm rounded-[32px] p-6 space-y-6 text-center
-        ${
-          dark
+        ${dark
             ? "bg-white/10 border border-white/20 backdrop-blur-xl"
             : "bg-black/5 border border-black/10 backdrop-blur-xl"
-        } shadow-2xl`}
+          } shadow-2xl`}
       >
         {/* Avatar */}
         <img
@@ -91,11 +89,10 @@ export default function BioPage() {
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: "spring", stiffness: 260 }}
                 className={`flex items-center gap-4 px-5 py-4 rounded-2xl
-                ${
-                  dark
+                ${dark
                     ? "bg-white/10 border border-white/10 hover:bg-white hover:text-black"
                     : "bg-black/5 border border-black/10 hover:bg-black hover:text-white"
-                }
+                  }
                 transition-colors`}
               >
                 {/* Icon */}
