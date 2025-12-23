@@ -26,6 +26,11 @@ export default function BioPage() {
       icon: Bot,
     },
     {
+      title: "himktanjungpinang-bintan",
+      href: "https://himktanjungpinang-bintan.vercel.app",
+      icon: MessageCircle,
+    },
+    {
       title: "GitHub",
       href: "https://github.com/hakimindraa",
       icon: Github,
@@ -35,6 +40,7 @@ export default function BioPage() {
       href: "https://wa.me/6283137412551",
       icon: MessageCircle,
     },
+
   ];
 
   return (
