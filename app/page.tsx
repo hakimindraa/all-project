@@ -50,7 +50,7 @@ export default function BioPage() {
   return (
     <main
       className={`${dark ? "bg-black text-white" : "bg-white text-black"
-        } min-h-screen flex items-center justify-center px-4 transition-colors`}
+        } min-h-screen flex items-center justify-center px-4 py-8 transition-colors`}
     >
       {/* Theme Toggle */}
       <button
