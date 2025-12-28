@@ -19,28 +19,32 @@ export default function BioPage() {
       title: "Portfolio Photography",
       href: "https://hakimlesmanaporto.vercel.app",
       icon: Camera,
+      image: "/screenshots/portfolio.jpg",
     },
     {
       title: "AI Chat App",
       href: "https://asistenchat.vercel.app",
       icon: Bot,
+      image: "/screenshots/aichat.jpg",
     },
     {
       title: "himktanjungpinang-bintan",
       href: "https://himktanjungpinang-bintan.vercel.app",
       icon: MessageCircle,
+      image: "/screenshots/himk.jpg",
     },
     {
       title: "GitHub",
       href: "https://github.com/hakimindraa",
       icon: Github,
+      image: "/screenshots/github.jpg",
     },
     {
       title: "WhatsApp",
       href: "https://wa.me/6283137412551",
       icon: MessageCircle,
+      image: null, // No screenshot for WhatsApp
     },
-
   ];
 
   return (
@@ -91,28 +95,42 @@ export default function BioPage() {
                 key={i}
                 href={link.href}
                 target="_blank"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 260 }}
-                className={`flex items-center gap-4 px-5 py-4 rounded-2xl
+                className={`block overflow-hidden rounded-2xl
                 ${dark
-                    ? "bg-white/10 border border-white/10 hover:bg-white hover:text-black"
-                    : "bg-black/5 border border-black/10 hover:bg-black hover:text-white"
+                    ? "bg-white/10 border border-white/10 hover:bg-white/20"
+                    : "bg-black/5 border border-black/10 hover:bg-black/10"
                   }
                 transition-colors`}
               >
-                {/* Icon */}
-                <motion.span
-                  whileHover={{ rotate: 6 }}
-                  className="flex items-center justify-center w-6 h-6"
-                >
-                  <Icon size={20} />
-                </motion.span>
+                {/* Screenshot Image */}
+                {link.image && (
+                  <div className="w-full aspect-video overflow-hidden">
+                    <img
+                      src={link.image}
+                      alt={link.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
 
-                {/* Text */}
-                <span className="text-sm font-medium">
-                  {link.title}
-                </span>
+                {/* Link Info */}
+                <div className="flex items-center gap-3 px-4 py-3">
+                  {/* Icon */}
+                  <motion.span
+                    whileHover={{ rotate: 6 }}
+                    className="flex items-center justify-center w-5 h-5 opacity-70"
+                  >
+                    <Icon size={18} />
+                  </motion.span>
+
+                  {/* Text */}
+                  <span className="text-sm font-medium">
+                    {link.title}
+                  </span>
+                </div>
               </motion.a>
             );
           })}
