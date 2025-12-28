@@ -19,7 +19,7 @@ export default function BioPage() {
       title: "Portfolio Photography",
       href: "https://hakimlesmanaporto.vercel.app",
       icon: Camera,
-      image: "/screenshots/portfolio.jpg",
+      image: "/screenshots/portofolio.jpg",
     },
     {
       title: "AI Chat App",
