@@ -28,10 +28,10 @@ export default function BioPage() {
       image: "/screenshots/aichat.jpg",
     },
     {
-      title: "himktanjungpinang-bintan",
-      href: "https://himktanjungpinang-bintan.vercel.app",
+      title: "playvoraroom",
+      href: "https://playvoraroom.vercel.app",
       icon: MessageCircle,
-      image: "/screenshots/himk.jpg",
+      image: "/screenshots/playvoraroom.jpg",
     },
     {
       title: "GitHub",
